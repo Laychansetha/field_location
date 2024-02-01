@@ -67,5 +67,4 @@ folium_static(mymap, width=800, height=800)
 st.header('Next Plan', divider='rainbow')
 st.write("I will build dashboards, data visualizations, and more. With Python, I can create interactive and visually appealing data visualizations using libraries such as Matplotlib, Seaborn, Plotly, and more. These libraries offer a range of features for creating customized and appealing plots to present data most simply and effectively. I can create a variety of data visualizations, including line charts, bar graphs, histograms, scatter plots, heat maps, and more. As I have time now, I plan to create a dashboard, data visualizations, and more from now until April. I will prepare the data and plan first to ensure that the final product meets my requirements and is of high quality.")
 
-link = '<u><a href="https://web.facebook.com/chansetha">Developing by Lay Chansetha</a></u>'
-st.markdown(link, unsafe_allow_html=True)
+st.write(":blue[Developing by Lay Chansetha]")
