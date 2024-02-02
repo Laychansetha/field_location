@@ -22,14 +22,6 @@ def load_data():
     df = pd.read_excel("rice_field.xlsx", sheet_name="data")
     return df
 
-# Create a bar chart
-st.bar_chart(df['Village'].value_counts())
-
-# Set title and labels
-st.title('Distribution of Farmers Across Villages')
-st.xlabel('Village')
-st.ylabel('Number of Farmers')
-
 @st.cache_resource
 def create_folium_map(df):
     # Create a Folium map
