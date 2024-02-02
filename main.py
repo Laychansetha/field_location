@@ -15,6 +15,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.title("RICE FIELD LOCATIONS")
 st.write("The map I have created using Python programming incorporates various interactive features to enhance its functionality. The map includes location cluster, which groups nearby markers together as the map is zoomed out and separates them as the map is zoomed in. Additionally, the map features a mini map, allowing you to have a small map in the corner of the main map for reference. Furthermore, the measure control has been added to enable you to measure distances and areas on the map. The full screen plugin has also been integrated to enable full-screen mode for the map, and the draw plugin allows you to draw shapes and add markers on the map. These features collectively enhance the map's usability, allowing you to interact with it, measure distances, areas, and switch to full-screen mode, making it a comprehensive and user-friendly mapping solution.")
+st.markdown('<hr>', unsafe_allow_html=True)
 
 @st.cache_data
 def load_data():
@@ -62,7 +63,7 @@ df = load_data()
 mymap = create_folium_map(df)
 
 # Display the map in the Streamlit app
-folium_static(mymap, width=800, height=800)
+folium_static(mymap, width=800, height=700)
 
 st.header('Next Plan', divider='rainbow')
 st.write("I will build dashboards, data visualizations, and more. With Python, I can create interactive and visually appealing data visualizations using libraries such as Matplotlib, Seaborn, Plotly, and more. These libraries offer a range of features for creating customized and appealing plots to present data most simply and effectively. I can create a variety of data visualizations, including line charts, bar graphs, histograms, scatter plots, heat maps, and more. As I have time now, I plan to create a dashboard, data visualizations, and more from now until April. I will prepare the data and plan first to ensure that the final product meets my requirements and is of high quality.")
